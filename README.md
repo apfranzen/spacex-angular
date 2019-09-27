@@ -1,27 +1,44 @@
-# SpaceXAngular
+# UI Engineering Technical Assessment
+##  Deployed
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
+https://upbeat-euler-4cfa54.netlify.com/
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  ## Languages and Frameworks
 
-## Code scaffolding
+  - 3 Angular (2+)
+  - 2 AngularJS (1.x)
+  - 1 React
+  - 4 Vue
+  - 4 Ember
+  - 1 Node.js
+  - 4 Python
+  - 4 PHP
+  - 4 Scala
+  - 3 Clojure
+  - 4 Haskell
+  - 4 Golang
+  - 4 Ruby
+  - 4 Perl
+  - 3 Java
+  - 4 Chef
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Development Environment
 
-## Build
+- `npm i` - install dependencies
+- `ng serve` run the development server
+- open your browser to `localhost:4200`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Functionality & Design Rationale
 
-## Running unit tests
+- The `launches` by default are sorted by `launch_date`. The launches can be sorted by any of the headings by clicking on them
+- `launches` are paginated with 12 results per page
+- Because the `details` were much longer than the other headings, these are truncated unless that row is `active`, then it expands so the user can read.
+- The `http` service was implemented as a service as opposed to implementing it inside the component itself. The reason for this approach is this allows for more flexibility in the future to handle more complex data processing, retry logic and handling intermittent connectivity.
+- I chose to `GET` all launches at 1 time as opposed to using the `pagination` querystrings. I chose to do it this way so there is less lag when switching between pages.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Next Steps
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Implement more robust error handling for the `http` request
+- Write unit tests
+- 🚀

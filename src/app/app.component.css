@@ -1,0 +1,65 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.fa {
+  font-family: "FontAwesome";
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  justify-items: center;
+}
+
+.logo_container {
+  grid-column: 2;
+  grid-row: 1;
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  grid-column: 2;
+}
+
+.activeRow {
+  height: 100px;
+}
+
+th {
+  width: 10rem;
+}
+
+.details {
+  width: 20rem;
+}
+
+table {
+  grid-column: 1 / -1;
+  border-collapse: collapse;
+  padding-bottom: 20rem;
+}
+
+thead {
+  border: 1px solid black;
+}
+
+th {
+  padding: 1rem;
+}
+
+td {
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+
+.page_control {
+  grid-column: 2;
+}
