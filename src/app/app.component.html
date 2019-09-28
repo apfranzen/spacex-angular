@@ -22,6 +22,9 @@
               "
             ></i>
           </th>
+          <th align="left">
+            Press Kit
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -40,6 +43,11 @@
                 ? "...click to expand launch details"
                 : getHeader(heading[1], launch)
             }}
+          </td>
+          <td>
+            <a href="{{ launch.links.presskit }}">
+              <i class="fa fa-file-pdf-o"></i>
+            </a>
           </td>
         </tr>
       </tbody>
