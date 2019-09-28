@@ -7,7 +7,7 @@ import * as R from "ramda";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  name: string = "Space-X Launch Tracker";
+  name: string = "SpaceX Launch Tracker";
   launches: Array<object> = [];
   filteredLaunches: Array<object> = [];
   error: Array<object> = [];
